@@ -1,7 +1,7 @@
 // Dependencies
 // ===========================================
 
-// var data = require("../app/data/friends");
+var friendsData = require("../app/data/friends");
 
 // Routing
 // ===========================================
@@ -15,6 +15,13 @@ module.exports = function(app, path) {
     // res.json({name: 'John'});
     // res.sendFile(path.join(__dirname + '/../public/', 'survey.html'));
   })
+
+  app.post("/survey", function(req, res) {
+    var newFriend = req.body;
+    // call friendCompare
+    console.log(newFriend);
+    res.send(newFriend);
+  });
 }
 
 

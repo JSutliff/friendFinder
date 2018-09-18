@@ -271,7 +271,7 @@
         </div>
     <br>
     <br>
-    <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Submit</button>
+    <button id="submitButton" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Submit</button>
 
 
   </div>
@@ -283,7 +283,36 @@
   </p>
 
 
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
+
+  <script>
+    /*
+    2 parts:
+    
+    1. send http request to a server
+      //get, post ...hey serer, i want you to get
+      //post this 
+      $.post('/survey', {name: 'john'}), $.get('/emails')
+      fetch()
+      $.get("/survey").done(data => {
+
+      })
+    2. server
+    app.post('/post'), app.get('/emails')
+    
+    */
+
+    $("#submitButton").on("click", function() {
+      console.log('Hey submit was clicked');
+      $.post("/survey", {name: 'John', URL: 'wewegfsd.com'}).then(data => console.log(data));
+    })
+
+  </script>
   
 </body>
 </html>

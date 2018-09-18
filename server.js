@@ -20,7 +20,19 @@ app.use(bodyParser.json());
 // =============================================================
 require("./routes/htmlRoutes")(app, path);
 require("./routes/apiRoutes")(app);
+var friends = require("./app/data/friends.js");
+var addFriend = require("./app/data/friends.js");
 
+console.log(friends);
+// addFriend(app);
+
+// app.post("/survey", function(req, res) {
+//   var newFriend = req.body;
+//   // call friendCompare
+//   console.log(newFriend);
+//   res.send(newFriend);
+
+// });
 
 // Starts the server to begin listening
 // =============================================================
