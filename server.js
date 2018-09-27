@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 require("./routes/htmlRoutes")(app, path);
 require("./routes/apiRoutes")(app);
 var friends = require("./app/data/friends.js");
-var addFriend = require("./app/data/friends.js");
+var addFriend = require("./app/data/friends.js").addFriend(app);
 
 console.log(friends);
 // addFriend(app);

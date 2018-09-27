@@ -13,7 +13,8 @@ var friendsData = [
         5,
         4,
         1
-      ]
+      ],
+      sum: 36
   },
 
 ];
@@ -22,12 +23,24 @@ var addFriend = function(app) {
   app.post("/survey", function(req, res) {
     var newFriend = req.body;
     // call friendCompare
-    console.log(newFriend);
-    res.send(newFriend);
-
+    newFriend.score = newFriend.score.map(function(elem) {
+      return parseInt(elem);
+    });
+    friendsData.push(newFriend);
+    console.log(friendsData);
+    res.send(friendsData);
   });
 }
 
+
+
+
+
+
+//submit on click
+  //friendMatch(this.score, friendData)
+  
+
 module.exports = friendsData;
 
-module.exports = addFriend;
+module.exports.addFriend = addFriend;

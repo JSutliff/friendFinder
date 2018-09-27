@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,291 +8,295 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/css/uikit.min.css" />
   <title>Survey</title>
 </head>
+
 <body>
-  
+
   <div class="uk-container uk-container-large">
     <h1>Survey Questions</h1>
     <hr>
     <form>
-        <fieldset class="uk-fieldset">
-    
-            <legend class="uk-legend"><h2>About You</h>
-            </legend>
-            
-            <h4>Name (Required)</h4>
-            <div class="uk-margin">
-                <input class="uk-input" type="text" placeholder="name">
-            </div>
-    
-            <h4>Link to Photo Image (Required)</h4>
-            <div class="uk-margin">
-                <input class="uk-input" type="text" placeholder="URL">
-            </div>
-        </fieldset>
+      <fieldset class="uk-fieldset">
+
+        <legend class="uk-legend">
+          <h2>About You</h>
+        </legend>
+
+        <h4>Name (Required)</h4>
+        <div class="uk-margin">
+          <input class="uk-input" type="text" placeholder="name" id="name">
+        </div>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <div class="uk-margin">
+          <input class="uk-input" type="text" placeholder="URL" id="url">
+        </div>
+      </fieldset>
     </form>
     <hr>
 
     <!--Question 1-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 1</h4>
-          <p>
-              Your mind is always buzzing with unexplored ideas and plans.
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 1</h4>
+        <p>
+          I like to consume cannabis and stay inside enjoying activities such
+          as video games.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer01">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 2-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 2</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 2</h4>
+        <p>
+          I like to consume cannabis in nature enjoying activities such as hiking
+          or biking.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer02">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 3-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 3</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 3</h4>
+        <p>
+          Music and cannabis are a great pairing, I dig attending live music
+          while enjoying the effects of cannabis.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer03">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 4-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 4</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 4</h4>
+        <p>
+          Large crowds make me paranoid.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer04">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 5-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 5</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 5</h4>
+        <p>
+          Sativa dominant varieties tend to heighten my anxiety.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer05">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 6-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 6</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 6</h4>
+        <p>
+          Indica dominant varieties put me to sleep.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer06">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 7-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 7</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 7</h4>
+        <p>
+          I'm a cannabis enthusiast who prefers refined methods of
+          consumption such as edibles or tinctures.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer07">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 8-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 8</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 8</h4>
+        <p>
+          I don't smoke pre-run, dabs only!
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer08">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 9-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 9</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 9</h4>
+        <p>
+          An old fashioned joint is my favorite method of consumption.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer09">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
     </div>
 
     <!--Question 10-->
     <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-select">
-          <h4>Question 10</h4>
-          <p>
-            Scale of 1-5 how dope is the dopest dope you've ever smoked?
-          </p>
-        </label>
-        <div uk-form-custom="target: > * > span:first-child">
-            <select>
-                <option value="">Please select...</option>
-                <option value="1">1 (Strongly Disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="4">5 (Strongly Agree)</option>
-            </select>
-            <button class="uk-button uk-button-default" type="button" tabindex="-1">
-                <span></span>
-                <span uk-icon="icon: chevron-down"></span>
-            </button>
-        </div>
-    <br>
-    <br>
-    <button id="submitButton" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Submit</button>
+      <label class="uk-form-label" for="form-stacked-select">
+        <h4>Question 10</h4>
+        <p>
+          I collect functional art pieces (dab rigs) and enjoy a heady sesh.
+        </p>
+      </label>
+      <div uk-form-custom="target: > * > span:first-child">
+        <select id="answer10">
+          <option value="">Please select...</option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="4">5 (Strongly Agree)</option>
+        </select>
+        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+          <span></span>
+          <span uk-icon="icon: chevron-down"></span>
+        </button>
+      </div>
+      <br>
+      <br>
+      <button id="submitButton" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Submit</button>
 
 
-  </div>
-  
-  <p>
-    <a href="/api/friends" target="_blank">API Friends List</a> 
-    |
-    <a href="https://github.com/JSutliff/friendFinder" target="_blank">Link To Github Repo</a>
-  </p>
+    </div>
+
+    <p>
+      <a href="/api/friends" target="_blank">API Friends List</a>
+      |
+      <a href="https://github.com/JSutliff/friendFinder" target="_blank">Link To Github Repo</a>
+    </p>
 
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.14/js/uikit.min.js"></script>
 
-  <script>
-    /*
+    <script>
+      /*
     2 parts:
     
     1. send http request to a server
@@ -306,13 +311,59 @@
     app.post('/post'), app.get('/emails')
     
     */
+      var friendsArr = [];
 
-    $("#submitButton").on("click", function() {
-      console.log('Hey submit was clicked');
-      $.post("/survey", {name: 'John', URL: 'wewegfsd.com'}).then(data => console.log(data));
-    })
+      $(function() {
+        $.get('/api/survey', function(res) {
+          friendsArr = res;
+          console.log(res);
+        })
+      })  
 
-  </script>
-  
+      $("#submitButton").on("click", function () {
+        var friendObj = {
+          name: $('#name').val().trim(),
+          photo: $('#url').val().trim(),
+          score: [
+            parseInt($('#answer01').val().trim()),
+            parseInt($('#answer02').val().trim()),
+            parseInt($('#answer03').val().trim()),
+            parseInt($('#answer04').val().trim()),
+            parseInt($('#answer05').val().trim()),
+            parseInt($('#answer06').val().trim()),
+            parseInt($('#answer07').val().trim()),
+            parseInt($('#answer08').val().trim()),
+            parseInt($('#answer09').val().trim()),
+            parseInt($('#answer10').val().trim())
+          ]
+        };
+
+        friendObj.sum = friendObj.score.reduce(function (acc, curr) {
+          return acc + curr;
+        }, 0);
+
+        var currentUserScore = friendObj.sum;
+        
+        console.log(friendMatch(currentUserScore, friendsArr));
+
+
+        $.post("/api/survey", friendObj).then(data => console.log(data));
+      })
+
+      function friendMatch(userScore, arr) {
+          var bestMatch;
+          var minUserDifference = 40;
+
+          for (var i = 0; i < arr.length; i++) {
+            if (Math.abs(userScore - arr[i].sum) < minUserDifference) {
+              minUserDifference = Math.abs(userScore - arr[i].sum);
+              bestMatch = arr[i];
+            }
+          }
+          return bestMatch;
+        }
+    </script>
+
 </body>
+
 </html>
