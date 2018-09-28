@@ -12,14 +12,14 @@ module.exports = function(app, path) {
   //   // res.sendFile(path.join(__dirname + '/../public/', 'home.html'));
   // });
 
-  app.get('/api/survey', function(req, res) {
+  app.get('/app/data', function(req, res) {
     res.json(friendsData);
   })
 
   app.post("/api/survey", function(req, res) {
     var newFriend = req.body;
     // call friendCompare
-    console.log(newFriend);
+    // console.log(newFriend);
     friendsData.push(newFriend);
     res.send(newFriend);
   });

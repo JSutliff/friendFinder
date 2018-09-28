@@ -23,7 +23,7 @@ require("./routes/apiRoutes")(app);
 var friends = require("./app/data/friends.js");
 var addFriend = require("./app/data/friends.js").addFriend(app);
 
-console.log(friends);
+// console.log(friends);
 // addFriend(app);
 
 // app.post("/survey", function(req, res) {
